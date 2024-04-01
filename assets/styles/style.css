@@ -1,0 +1,292 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Regular.ttf');
+}
+@font-face {
+    font-family: 'Open Sans Bold';
+    src: url('../fonts/OpenSans-SemiBold.ttf');
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fff7d3;
+}
+p {
+    font-size: 18px;
+}
+.main-container {
+    background-image: url('../images/background.jpg');
+    min-height: 100vh;
+    overflow-x: hidden;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container {
+    max-width: 1500px;
+    width: 86%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+header {
+    width: 100%;
+    height: 500px
+}
+header figure {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+header img {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    max-width: 400px;
+}
+.collection {
+    border: 1px solid #5f4139;
+    background-color: #fff7d3;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 2px 3px 7px rgba(0,0,0,.5);
+}
+.table-area {
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 1000px;
+    width: auto;
+    margin: 0 auto;
+}
+.table-area table {
+    width: 100%;
+    border: 1px solid #5f4139;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff7d3;
+}
+.table-area table tbody {
+    width: 100%;
+}
+.table-area table tr {
+    border: 2px solid #fad694;
+    padding: 0 0 0 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: -1px;
+    justify-content: space-around;
+}
+.table-area table tr:nth-child(even),
+.table-area table thead tr {
+    background-color: #f7e2bc;
+}
+.table-area table .dest-1 {
+    background-color: #fad694!important;
+    border: 2px solid #dfbd7f;
+}
+.table-area table tbody .dest-1 td {
+    border-right: 2px solid #dfbd7f!important;
+}
+.table-area table .dest-2 {
+    background-color: #b9ecb9!important;
+}s
+.table-area table tbody tr td img {
+    display: inline-block;
+}
+.table-area table tbody tr td,
+.table-area table thead tr th {
+    border-right: 2px solid #fad694;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    overflow: hidden;
+}
+.table-area table tbody tr td:nth-of-type(1),
+.table-area table thead tr th:nth-of-type(1) {
+    width: 15%;
+    max-width: 15%;
+}
+.table-area table tbody tr td:nth-of-type(2),
+.table-area table thead tr th:nth-of-type(2) {
+    width: 15%;
+    max-width: 15%;
+}
+.table-area table tbody tr td:nth-of-type(2) {
+    font-family: 'Open Sans Bold', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: #201613;
+}
+.table-area table tbody tr td:nth-of-type(2) p {
+    font-size: 20px;
+}
+.table-area table tbody tr td:nth-of-type(2)::before {
+    content: '#';
+    font-size: 12px;
+    opacity: 0.4;
+}
+.table-area table tbody tr td:nth-of-type(3),
+.table-area table thead tr th:nth-of-type(3) {
+    width: 25%;
+    max-width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.table-area table tbody tr td:nth-of-type(3) span {
+    font-size: 16px;
+    color: #444;
+    display: block;
+}
+.table-area table tbody tr td:nth-of-type(3) span::before {
+    content: '(';
+}
+.table-area table tbody tr td:nth-of-type(3) span::after {
+    content: ')';
+}
+.table-area table tbody tr td:nth-of-type(4),
+.table-area table thead tr th:nth-of-type(4) {
+    width: 45%;
+    max-width: 45%;
+}
+.table-area table tbody tr td:nth-of-type(4) p {
+    font-size: 17px;
+    text-align: left;
+    width: 100%;
+}
+.table-area table tbody tr .price {
+    color: #56b156;
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+    display: block;
+}
+.table-area table tbody tr .price::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-size: cover;
+    margin-right: 2px;
+    background-image: url('../images/gold-money.png');
+}
+@media (max-width: 1100px) {
+    .container {
+        max-width: 89%;
+        width: 89%;
+    }
+    header {
+        width: 100%;
+        height: 400px
+    }
+    header img {
+        max-width: 70%;
+    }
+    p {
+        font-size: 16px;
+    }
+    .collection {
+        padding: 25px;
+    }
+    .table-area table tr {
+        padding: 0 0 0 10px;
+    }
+    .table-area table tbody tr td,
+.table-area table thead tr th {
+    padding: 10px;
+}
+.table-area {
+    max-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+.table-area table tbody tr td:nth-of-type(2) p {
+    font-size: 18px;
+}
+}
+@media (max-width: 630px) {
+    .table-area {
+        max-width: 100%;
+        overflow: auto;
+    }
+    .table-area table {
+        max-width: 600px;
+        width: 600px;
+        overflow-x: auto;
+    }
+}
+@media (max-width: 590px) {
+    .table-area table thead tr,
+    .table-area table tbody tr {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .table-area table tbody tr td:nth-of-type(4),
+.table-area table thead tr th:nth-of-type(4) {
+    display: none;
+}
+.table-area table tbody tr td:nth-of-type(1),
+.table-area table thead tr th:nth-of-type(1) {
+    width: 30%;
+    max-width: 30%;
+    justify-content: center;
+}
+.table-area table tbody tr td:nth-of-type(2),
+.table-area table thead tr th:nth-of-type(2) {
+    width: 30%;
+    max-width: 30%;
+}
+.table-area table tbody tr td:nth-of-type(3),
+.table-area table thead tr th:nth-of-type(3) {
+    width: 40%;
+    max-width: 40%;
+}
+.table-area table tbody tr td:nth-of-type(1) img {
+    width: 36px;
+}
+.table-area table tbody tr td:nth-of-type(2) {
+    font-size: 18px;
+}
+.table-area table tbody tr td:nth-of-type(3) span {
+    font-size: 14px;
+}
+.table-area table tbody tr td:nth-of-type(4) p {
+    font-size: 16px;
+}
+.table-area table tbody tr td:nth-of-type(3) span {
+    font-size: 12px;
+}
+}
+@media (max-width: 460px) {
+    h1 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .table-area table tbody tr td:nth-of-type(1) {
+        padding: 10px 0;
+    }
+    .table-area table tbody tr td:nth-of-type(1) img {
+        width: 35px;
+        transform: translateX(-30%);
+    }
+    .table-area table {
+        max-width: 500px;
+    }
+}
