@@ -19,7 +19,7 @@ p {
     font-size: 18px;
 }
 .main-container {
-    background-image: url('../images/background.jpg');
+    background-image: url('../images/background.webp');
     min-height: 100vh;
     overflow-x: hidden;
     width: 100%;
