@@ -233,11 +233,6 @@ header img {
     }
 }
 @media (max-width: 590px) {
-    .table-area table thead tr,
-    .table-area table tbody tr {
-        display: flex;
-        flex-direction: row-reverse;
-    }
     .table-area table tbody tr td:nth-of-type(4),
 .table-area table thead tr th:nth-of-type(4) {
     display: none;
@@ -287,6 +282,22 @@ header img {
         transform: translateX(-30%);
     }
     .table-area table {
-        max-width: 500px;
+        max-width: 400px;
+    }
+}
+@media (max-width: 360px) {
+    h1 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .table-area table tbody tr td:nth-of-type(1) {
+        padding: 10px 0;
+    }
+    .table-area table tbody tr td:nth-of-type(1) img {
+        width: 35px;
+        transform: translateX(-30%);
+    }
+    .table-area table {
+        max-width: 300px;
     }
 }
