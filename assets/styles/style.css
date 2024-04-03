@@ -96,8 +96,8 @@ header img {
     border-right: 2px solid #dfbd7f!important;
 }
 .table-area table .dest-2 {
-    background-color: #b9ecb9!important;
-}s
+    background-color: #c5ebf0!important;
+}
 .table-area table tbody tr td img {
     display: inline-block;
 }
@@ -109,6 +109,42 @@ header img {
     justify-content: center;
     padding: 20px;
     overflow: hidden;
+}
+.table-area table .column {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+}
+.table-area table .status {
+    width: 100%;
+    margin-top: 10px;
+}
+.table-area table .status span {
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.table-area table .status span::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-size: cover;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.table-area table .status .speed::before {
+    background-image: url('../images/speed.png');
+}
+.table-area table .status .attack::before {
+    background-image: url('../images/Damage.png');
+    width: 18px;
+    height: 18px;
+}
+.table-area table .status .defense::before {
+    background-image: url('../images/Defense.png');
 }
 .table-area table tbody tr td:nth-of-type(1),
 .table-area table thead tr th:nth-of-type(1) {
@@ -177,11 +213,12 @@ header img {
     width: 100%;
 }
 .table-area table tbody tr .price {
-    color: #56b156;
+    color: #488d48;
     font-size: 14px;
     width: 100%;
+    font-weight: bold;
     text-align: center;
-    margin-top: 5px;
+    margin-top: 10px;
     display: block;
 }
 .table-area table tbody tr .price::before {
