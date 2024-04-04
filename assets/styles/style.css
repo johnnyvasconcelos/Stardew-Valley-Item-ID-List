@@ -138,6 +138,9 @@ header img {
 .table-area table .status .speed::before {
     background-image: url('../images/speed.png');
 }
+.table-area table .status .speed-2::before {
+    background-image: url('../images/speed-2.png');
+}
 .table-area table .status .attack::before {
     background-image: url('../images/Damage.png');
     width: 18px;
@@ -151,6 +154,12 @@ header img {
 }
 .table-area table .status .crit-power::before {
     background-image: url('../images/Crit_Power.png');
+}
+.table-area table .status .luck::before {
+    background-image: url('../images/Luck.png');
+}
+.table-area table .status .mining::before {
+    background-image: url('../images/Mining.png');
 }
 .table-area table tbody tr td:nth-of-type(1),
 .table-area table thead tr th:nth-of-type(1) {
