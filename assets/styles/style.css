@@ -57,6 +57,12 @@ header img {
     padding: 40px;
     border-radius: 20px;
     box-shadow: 2px 3px 7px rgba(0,0,0,.5);
+    /*
+    border-image: url('../images/menu_border.png') 15 stretch;
+    -webkit-border-image: url('../images/menu_border.png') 15 stretch;
+    -o-border-image: url('../images/menu_border.png') 15 stretch;
+    background-size: cover;
+    */
 }
 .table-area {
     padding: 0px;
@@ -74,7 +80,16 @@ header img {
     border: 1px solid #5f4139;
     border-radius: 10px;
     overflow: hidden;
-    border: 12px solid transparent;
+    border: 1px solid #5f4139;
+    background-color: #fff7d3;
+    border-radius: 20px;
+    box-shadow: 2px 3px 7px rgba(0,0,0,.5);
+    /*
+    border-image: url('../images/menu_border.png') 15 stretch;
+    -webkit-border-image: url('../images/menu_border.png') 15 stretch;
+    -o-border-image: url('../images/menu_border.png') 15 stretch;
+    background-size: cover;
+    */
 }
 .table-area table tbody {
     width: 100%;
