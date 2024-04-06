@@ -59,18 +59,22 @@ header img {
     box-shadow: 2px 3px 7px rgba(0,0,0,.5);
 }
 .table-area {
-    padding: 40px;
+    padding: 0px;
     border-radius: 20px;
     max-width: 1000px;
     width: auto;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 .table-area table {
     width: 100%;
     border: 1px solid #5f4139;
     border-radius: 10px;
     overflow: hidden;
-    background-color: #fff7d3;
+    border: 12px solid transparent;
 }
 .table-area table tbody {
     width: 100%;
@@ -87,6 +91,9 @@ header img {
 .table-area table tr:nth-child(even),
 .table-area table thead tr {
     background-color: #f7e2bc;
+}
+.table-area table tr:nth-child(odd) {
+    background-color: #fff7d3;
 }
 .table-area table .dest-1 {
     background-color: #fad694!important;
